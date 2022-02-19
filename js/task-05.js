@@ -7,7 +7,8 @@ const output = document.querySelector("#name-output");
 const defaultTxt = "Anonymous";
 
 input.addEventListener("input", (event) => {
-    output.textContent = event.currentTarget.value !== "" ? event.currentTarget.value : defaultTxt;
+    const userInput = event.currentTarget.value;
+    output.textContent = userInput !== "" ? userInput : defaultTxt;
 })
 
 
